@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/drItemBackground"
+        android:layout_marginTop="5dp"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/songArt"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/vynil"/>
+
+        <TextView
+            android:id="@+id/songTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/songArt"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="7dp"
+            android:textColor="@color/drTextBackground"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id="@+id/songArtist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/songArt"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_below="@+id/songTitle"
+            android:layout_marginTop="7dp"
+            android:textColor="@color/drTextBackground"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
